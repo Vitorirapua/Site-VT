@@ -35,7 +35,7 @@ html{
 }
 
 body{
-    background: linear-gradient(#000000, #a8a8a8);
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(197, 197, 197)) fixed;
 }
 
 #wrap{
