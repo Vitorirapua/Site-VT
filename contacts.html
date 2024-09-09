@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/_template.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <title>VT </title>
     <link rel="icon" href="image/logo.png">
 </head>
@@ -24,7 +25,7 @@
                 <i class="fa-solid fa-user fa-fw" style="color: #000000;"></i>
                 <span>Equipe</span>
             </a>
-            <a href="contacts.html">
+            <a href="#contato">
                 <i class="fa-solid fa-envelope fa-fw" style="color: #000000;"></i>
                 <span>Contato</span>
             </a>
@@ -35,19 +36,40 @@
     <main>
 
         <article>
-            <h2>Seja bem vindo!!!</h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis fugiat est, debitis laudantium fugit perferendis ipsa repellat similique ut, nostrum inventore! Architecto, consequatur incidunt! Maxime labore dicta odio esse.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam eum culpa consectetur debitis omnis architecto soluta adipisci sequi ex odio porro, rem, quas ipsum iste cumque vitae iusto laborum.</p>
-           
-           <div class="imagens-main"> <img src="https://picsum.photos/200/200" alt="Imagem aleatória">     <img src="https://picsum.photos/199/199" alt="Imagem aleatória">   </div>
+            <article>
 
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor magni in eius quis quam dolores possimus! Obcaecati dolore molestias necessitatibus officiis consectetur! Deleniti dolores earum ex! Quasi vero molestiae deleniti. 
-        </article>
+                <h2>Faça Contato</h2>
+                <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>VT</strong>.</p>
+                <p class="center red">Todos os campos obrigatórios.</p>
 
-        <aside id="sobre">
-            <h3>Sobre o site </h3>
-            
-             <p>Esse site Foi desenvolvido no dia 02 de Setembro de 2024. Criado por Vitor Irapuã</p>
+                <form action="contacts.html#" method="post">
+
+                    <p>
+                        <label for="fieldName">Seu nome:</label>
+                        <input type="text" name="name" id="fieldName" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="fieldEmail">Seu e-mail:</label>
+                        <input type="email" name="email" id="fieldEmail" required>
+                    </p>
+
+                    <p>
+                        <label for="fieldSubject">Assunto:</label>
+                        <input type="text" name="subject" id="fieldSubject" required minlength="5">
+                    </p>
+
+                    <p>
+                        <label for="fieldMessage">Mensagem:</label>
+                        <textarea name="message" id="fieldMessage" required minlength="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <small>&larr; Clique somente uma vez</small>
+                    </p>
+
+                </form>
      
         </aside>
 

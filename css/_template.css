@@ -77,6 +77,9 @@ header>nav{
     justify-content: flex-end;
     padding-right: 2px;
 }
+header>nav span{
+    text-transform: uppercase;
+}
 
 header>nav a{
     padding-right: 5px;
@@ -169,8 +172,17 @@ header>nav a{
 
 }
 @media screen and (min-width: 320px){
-    a{
-        font-size: .75rem;
+    header a{
+        font-size: .65rem;
+    }
+
+    footer a{
+        font-size: 1rem;
+
+    }
+
+    #left-top h1{
+        font-size: 1.2rem;
     }
 }
 
