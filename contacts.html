@@ -1,97 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/_template.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/toggle.css">
     <title>VT </title>
     <link rel="icon" href="image/logo.png">
 </head>
+
 <body>
-<div id="wrap">
+    <div id="wrap">
 
-    <header>
-        <a href="_template.html" id="left-top">
-            <img src="image/logo.png" alt="Logo do meu site">
-            <h1>VT </h1>
-        </a>
-        <nav>
-            <a href="#sobre">
-                <span>Sobre</span>
+        <header>
+            <a href="_template.html" id="left-top">
+                <img src="image/logo.png" alt="Logo do meu site">
+                <h1>VT </h1>
             </a>
-            <a href="#">
-                <i class="fa-solid fa-user fa-fw" style="color: #000000;"></i>
-                <span>Equipe</span>
-            </a>
-            <a href="#contato">
-                <i class="fa-solid fa-envelope fa-fw" style="color: #000000;"></i>
-                <span>Contato</span>
-            </a>
-        </nav>
+            <nav>
+                <div id="menu">
+                    <a href="_template.html">
+                        <span>Sobre</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user fa-fw" style="color: #000000;"></i>
+                        <span>Equipe</span>
+                    </a>
+                    <a href="contacts.html">
+                        <i class="fa-solid fa-envelope fa-fw" style="color: #000000;"></i>
+                        <span>Contato</span>
+                    </a>
+                </div>
+                <span id="toggleMenu">
+                    <i class="fa-solid fa-bars fa-fw" title="Menu de navegação"></i>
+                </span>
 
-    </header>
+            </nav>
 
-    <main>
+        </header>
 
-        <article>
+        <main>
+
             <article>
+                <article>
 
-                <h2>Faça Contato</h2>
-                <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>VT</strong>.</p>
-                <p class="center red">Todos os campos obrigatórios.</p>
+                    <h2>Faça Contato</h2>
+                    <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>VT</strong>.</p>
+                    <p class="center red">Todos os campos obrigatórios.</p>
 
-                <form action="contacts.html#" method="post">
+                    <form action="contacts.html#" method="post">
 
-                    <p>
-                        <label for="fieldName">Seu nome:</label>
-                        <input type="text" name="name" id="fieldName" required minlength="3">
-                    </p>
+                        <p>
+                            <label for="fieldName">Seu nome:</label>
+                            <input type="text" name="name" id="fieldName" required minlength="3">
+                        </p>
 
-                    <p>
-                        <label for="fieldEmail">Seu e-mail:</label>
-                        <input type="email" name="email" id="fieldEmail" required>
-                    </p>
+                        <p>
+                            <label for="fieldEmail">Seu e-mail:</label>
+                            <input type="email" name="email" id="fieldEmail" required>
+                        </p>
 
-                    <p>
-                        <label for="fieldSubject">Assunto:</label>
-                        <input type="text" name="subject" id="fieldSubject" required minlength="5">
-                    </p>
+                        <p>
+                            <label for="fieldSubject">Assunto:</label>
+                            <input type="text" name="subject" id="fieldSubject" required minlength="5">
+                        </p>
 
-                    <p>
-                        <label for="fieldMessage">Mensagem:</label>
-                        <textarea name="message" id="fieldMessage" required minlength="5"></textarea>
-                    </p>
+                        <p>
+                            <label for="fieldMessage">Mensagem:</label>
+                            <textarea name="message" id="fieldMessage" required minlength="5"></textarea>
+                        </p>
 
-                    <p>
-                        <button type="submit">Enviar</button>
-                        <small>&larr; Clique somente uma vez</small>
-                    </p>
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <small>&larr; Clique somente uma vez</small>
+                        </p>
 
-                </form>
-     
-        </aside>
+                    </form>
+
+                    </aside>
 
 
-    </main>
+        </main>
 
-    
-    
+
+
         <footer class="site-title">
-            
+
             <div class="footer_top" title="Você pode copiar e reutilizar este conteúdo livremente">
 
                 <a href="_template.html" title="Ir para a pagina inicial"><i class="fa-solid fa-house fa-fw"></i></a>
-                <div><i class="fa-regular fa-copyright fa-flip-horizontal"></i>  Copyleft 2024 Vitor irapuã</div>
+                <div><i class="fa-regular fa-copyright fa-flip-horizontal"></i> Copyleft 2024 Vitor irapuã</div>
                 <a href="#wrap" title="Ir para o topo dessa página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
 
             </div>
 
             <div class="footer_button">
-                
+
                 <nav>
-                    
+
                     <h4 id="contato">Redes Sociais</h4>
 
                     <a href="https://www.instagram.com/mlk__vt_/" target="_blank">
@@ -130,8 +139,11 @@
             </div>
         </footer>
 
-    
 
-</div>  <!-- WRAP -->
+
+    </div> <!-- WRAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
 </body>
+
 </html>
