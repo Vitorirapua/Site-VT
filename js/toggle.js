@@ -1,3 +1,0 @@
-$("#toggleMenu").click(()=>{
-    $("#menu").toggle();
-})
